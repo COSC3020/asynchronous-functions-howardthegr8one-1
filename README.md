@@ -21,3 +21,6 @@ this.
 
 What is the time complexity of your implementation (worst-case $\Theta$)? Add
 your answer, including your reasoning, to this markdown file.
+
+## My Answer
+Since the map function must map all elements in the given array then even though it's running asynchronously, all elements must be processed before the async reduce function call. Additionally, since the reduce function works in a similar manner and is sequential to the map function call then the asymptotic runtime, when ignoring constant factors, is just $\Theta(n)$.
